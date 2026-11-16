@@ -1,0 +1,16 @@
+# .NET build output
+bin/
+obj/
+dist/
+TestResults/
+.vs/
+*.user
+
+# Python (tools/make_icon.py only)
+__pycache__/
+*.py[cod]
+.venv/
+
+# Personal data and logs live in %APPDATA% / %LOCALAPPDATA%; never commit stray copies.
+config.json
+*.log

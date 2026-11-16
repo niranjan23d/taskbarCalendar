@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- .NET Framework 4.8.1 ships with Windows 11, so the EXE needs nothing else installed. -->
+    <TargetFramework>net481</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>true</UseWindowsForms>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>TaskbarCalendar</RootNamespace>
+    <AssemblyName>TaskbarCalendar</AssemblyName>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>..\..\assets\icon.ico</ApplicationIcon>
+    <Version>2.2.3</Version>
+    <Product>Taskbar Calendar</Product>
+    <Description>Classic Outlook meetings on the Windows 11 taskbar</Description>
+    <Copyright>Copyright (c) 2026 Taskbar Calendar contributors. Includes upstream MIT-licensed work.</Copyright>
+    <Company>Taskbar Calendar contributors</Company>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <Deterministic>true</Deterministic>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\assets\icon.ico" LogicalName="icon.ico" />
+    <EmbeddedResource Include="..\..\assets\fugue\calendar-small.png" LogicalName="fugue.calendar-small.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\calendar-day.png" LogicalName="fugue.calendar-day.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\balloon.png" LogicalName="fugue.balloon.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\cross-circle.png" LogicalName="fugue.cross-circle.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\category-group.png" LogicalName="fugue.category-group.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\book.png" LogicalName="fugue.book.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\bug.png" LogicalName="fugue.bug.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\processor.png" LogicalName="fugue.processor.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\gear.png" LogicalName="fugue.gear.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\color.png" LogicalName="fugue.color.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\paint-can.png" LogicalName="fugue.paint-can.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\arrow-circle-double.png" LogicalName="fugue.arrow-circle-double.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\tick.png" LogicalName="fugue.tick.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\cross.png" LogicalName="fugue.cross.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\folder-open.png" LogicalName="fugue.folder-open.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\document-text.png" LogicalName="fugue.document-text.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\clock.png" LogicalName="fugue.clock.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\door-open-in.png" LogicalName="fugue.door-open-in.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="TaskbarCalendar.Tests" />
+  </ItemGroup>
+
+  <!-- Keep the hand-off EXE current when this project is rebuilt from Visual Studio. -->
+  <Target Name="CopyTaskbarCalendarToDist" AfterTargets="Build" Condition="'$(DesignTimeBuild)' != 'true'">
+    <MakeDir Directories="$(MSBuildProjectDirectory)\..\..\dist" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFiles="$(MSBuildProjectDirectory)\..\..\dist\TaskbarCalendar.exe" SkipUnchangedFiles="false" />
+  </Target>
+
+</Project>
