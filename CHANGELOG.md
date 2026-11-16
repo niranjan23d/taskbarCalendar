@@ -2,6 +2,10 @@
 
 All notable changes to this Outlook-only fork are recorded here.
 
+## 2.2.4 - 2026-11-16
+
+- Expanded local title-word icon matching with classic Fugue icons for planning, presentations, development, data, security, research, release, finance, customer, calls, social events, wellness, breaks, home working, global meetings, and metrics.
+
 ## 2.2.3 - 2026-11-16
 
 - Removed an embedded author email address from Settings so the published build contains no personal contact detail.

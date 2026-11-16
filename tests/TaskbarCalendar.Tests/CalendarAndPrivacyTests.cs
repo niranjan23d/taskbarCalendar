@@ -230,8 +230,23 @@ namespace TaskbarCalendar.Tests
             Assert.Equal(MeetingIcon.Emulator, LegacyIcons.For(new Meeting { Title = "Core Emu Sync Up" }));
             Assert.Equal(MeetingIcon.Operations, LegacyIcons.For(new Meeting { Title = "Weekly Veloce Ops" }));
             Assert.Equal(MeetingIcon.Team, LegacyIcons.For(new Meeting { Title = "Teams review" }));
-            Assert.Equal(MeetingIcon.Calendar, LegacyIcons.For(new Meeting { Title = "Design review" }));
+            Assert.Equal(MeetingIcon.Presentation, LegacyIcons.For(new Meeting { Title = "Design review" }));
+            Assert.Equal(MeetingIcon.Development, LegacyIcons.For(new Meeting { Title = "Docker Guild 101 - Docker Compose" }));
+            Assert.Equal(MeetingIcon.Wellness, LegacyIcons.For(new Meeting { Title = "Weekly Yoga Class" }));
+            Assert.Equal(MeetingIcon.Customer, LegacyIcons.For(new Meeting { Title = "Customer roadmap discussion" }));
+            Assert.Equal(MeetingIcon.Security, LegacyIcons.For(new Meeting { Title = "Threat model review" }));
+            Assert.Equal(MeetingIcon.Data, LegacyIcons.For(new Meeting { Title = "Telemetry data review" }));
+            Assert.Equal(MeetingIcon.Research, LegacyIcons.For(new Meeting { Title = "Lab experiment readout" }));
+            Assert.Equal(MeetingIcon.Release, LegacyIcons.For(new Meeting { Title = "Release milestone" }));
+            Assert.Equal(MeetingIcon.Finance, LegacyIcons.For(new Meeting { Title = "FY27 budget review" }));
+            Assert.Equal(MeetingIcon.Planning, LegacyIcons.For(new Meeting { Title = "Project roadmap" }));
+            Assert.Equal(MeetingIcon.ActionItems, LegacyIcons.For(new Meeting { Title = "Action items" }));
+            Assert.Equal(MeetingIcon.Interview, LegacyIcons.For(new Meeting { Title = "Candidate interview" }));
+            Assert.Equal(MeetingIcon.Call, LegacyIcons.For(new Meeting { Title = "Architecture call" }));
+            Assert.Equal(MeetingIcon.Break, LegacyIcons.For(new Meeting { Title = "Coffee break" }));
+            Assert.Equal(MeetingIcon.Calendar, LegacyIcons.For(new Meeting { Title = "Design huddle" }));
             Assert.Equal(16, LegacyIcons.ImageFor(MeetingIcon.Cancelled).Width);
+            Assert.Equal(16, LegacyIcons.ImageFor(MeetingIcon.Security).Width);
         }
 
         [Fact]

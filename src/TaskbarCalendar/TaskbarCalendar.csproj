@@ -10,7 +10,7 @@
     <AssemblyName>TaskbarCalendar</AssemblyName>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>..\..\assets\icon.ico</ApplicationIcon>
-    <Version>2.2.3</Version>
+    <Version>2.2.4</Version>
     <Product>Taskbar Calendar</Product>
     <Description>Classic Outlook meetings on the Windows 11 taskbar</Description>
     <Copyright>Copyright (c) 2026 Taskbar Calendar contributors. Includes upstream MIT-licensed work.</Copyright>
@@ -48,6 +48,24 @@
     <EmbeddedResource Include="..\..\assets\fugue\document-text.png" LogicalName="fugue.document-text.png" />
     <EmbeddedResource Include="..\..\assets\fugue\clock.png" LogicalName="fugue.clock.png" />
     <EmbeddedResource Include="..\..\assets\fugue\door-open-in.png" LogicalName="fugue.door-open-in.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\beaker.png" LogicalName="fugue.beaker.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\briefcase.png" LogicalName="fugue.briefcase.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\chart.png" LogicalName="fugue.chart.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\clipboard-task.png" LogicalName="fugue.clipboard-task.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\cup.png" LogicalName="fugue.cup.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\database.png" LogicalName="fugue.database.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\globe.png" LogicalName="fugue.globe.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\heart.png" LogicalName="fugue.heart.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\home.png" LogicalName="fugue.home.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\money.png" LogicalName="fugue.money.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\music.png" LogicalName="fugue.music.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\projection-screen-presentation.png" LogicalName="fugue.projection-screen-presentation.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\rocket.png" LogicalName="fugue.rocket.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\shield.png" LogicalName="fugue.shield.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\target.png" LogicalName="fugue.target.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\telephone.png" LogicalName="fugue.telephone.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\terminal.png" LogicalName="fugue.terminal.png" />
+    <EmbeddedResource Include="..\..\assets\fugue\user-business.png" LogicalName="fugue.user-business.png" />
   </ItemGroup>
 
   <ItemGroup>

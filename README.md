@@ -20,6 +20,7 @@ New Outlook by itself is not supported because it does not expose the local `Out
 - Opens the Notes-style hover card while the pointer is over either the strip or card. The card has a leather binding, layered torn-paper edge, ruled paper, callout, and configurable corner radius.
 - Adds a three-part date stamp to the Notes card. In Settings > Appearance, drag the day number, month, and weekday independently in the preview; their font, colour, formatting, and placement are saved with the theme.
 - Reveals a small inline join icon when you hover a joinable current or upcoming meeting row. Clicking it opens that meeting's Outlook invitation link, which launches Teams for a Teams meeting.
+- Uses context icons inferred locally from meeting-title words, including planning, presentation, development, data, security, training, customer, wellness, and break meetings.
 - Offers configurable close delay, fade duration, appear animation, transparency, paper/rule settings, fonts, colours, callout, shadow, and empty-day tone.
 
 ## Screenshots
@@ -72,3 +73,5 @@ The executable is written to `src/TaskbarCalendar/bin/Release/net481/TaskbarCale
 ## Publishing
 
 This repository retains the upstream MIT license and attribution. Review the staged diff and run the CCI/credential scan before publishing. The personal remote must remain private and the corporate remote restricted. The app has no self-update path; releases are installed deliberately.
+
+The bundled meeting icons are from the [Fugue Icons](https://p.yusukekamiyamane.com/) set by Yusuke Kamiyamane, used under CC BY 3.0.
